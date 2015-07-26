@@ -22,7 +22,7 @@ class Assets
     end
   end
 
-  def self.trim_assets(assets)
+  def self.trimAssets(assets)
     @asset_hash = {}
     assets.each do |asset|
       @asset_hash[asset.itemID] = hashify(asset.attributes)
