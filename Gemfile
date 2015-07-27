@@ -44,8 +44,12 @@ group :development do
   gem "pry-byebug"
   gem "pry-remote"
   gem "awesome_print",    :require => "ap"
+  gem 'sqlite3'
 end
 
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 ruby "2.1.2"
